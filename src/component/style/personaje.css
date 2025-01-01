@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+/* ========================================================================== */
+.contenido img {
+    width: 200px;
+    height: auto;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background:  #605eb9dc;
+    padding: 20px 0px;
+}
+
+/* ========================================================================== */
+/* Card */
+/* =========================================================================== */
+.principal-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    border-radius: 20px;
+    background-color: #393874dc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3),
+        inset 0px -4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 0 16px;
+    padding-bottom: 20px;
+}
+
+.principal-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4),
+}
+
+.imagen-primaria {
+    width: 350px;
+    height: 278px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px;
+}
+
+.h2-primario {
+    font-size: 33px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.logo-hospital {
+    width: 149px;
+    height: 99px;
+    margin: 10px 0px 60px
+}
+
+.p {
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-card {
+    background: var(--color, rgb(255, 255, 255));
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 119px;
+    margin-bottom: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* ================================================================== */
+/* Ventana Modal */
+/* ================================================================== */
+.color-modal {
+    background-color: #393874dc !important;
+    color: #fff !important;
+}
+
+.modal-header {
+    background: var(--color, rgb(255, 255, 255)) !important;
+}
+
+.titulo-modal {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 26px;
+    color: #000;
+}
+
+.modal-footer {
+    background: var(--color, rgb(255, 255, 255)) !important;
+}
+
+.textos {
+    margin-top: 30px;
+}
+
+.imagen-modal {
+    width: 250px;
+    height: 390px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+
+.tamaño-modal {
+    width: 600px !important;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ================================================================== */
+/* Barra de busqueda */
+/* ================================================================== */
+.busqueda {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.input-busca {
+    flex: 1;
+    border: 1px solid rgba(71, 136, 249, 0.866);
+    /* Añadí un borde gris claro */
+    outline: none;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    /* Ajusté el borde para mantener consistencia */
+    font-size: 16px;
+    background-color: #f9f9f9;
+    /* Un fondo ligeramente gris para diferenciar del fondo blanco */
+}
+
+.input-busca:focus {
+    border-color: rgba(0, 179, 255, 0.7);
+    box-shadow: 0 0 8px rgba(38, 0, 255, 0.5);
+}
+
+.lupa {
+    background-color:  #7775ffdc;
+    /* Color de fondo del botón */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.busqueda input::placeholder {
+    color: #cccccc;
+}
+
+.busqueda input:focus {
+    outline: none;
+}
+
+/* Botones */
+.btn-pag {
+    font-size: 20px !important;
+    background-color:  #605eb9dc;
+    /* Fondo semitransparente en azul */
+    border: 2px solid rgba(100, 149, 237, 0.4);
+    /* Borde azul semitransparente */
+    border-radius: 8px;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.btn-pag:hover {
+    background-color: rgba(100, 149, 237, 0.4);
+    /* Fondo azul más visible al pasar el mouse */
+}
+
+.botones-pagi {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.contenedor-paginacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-hoja {
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    /* Aumenta la visibilidad del borde */
+    background-color: #605eb9dc;
+    /* Aumenta las dimensiones y opacidades */
+    backdrop-filter: blur(50px);
+    /* Reduce el desenfoque para un efecto más nítido */
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.contenedor-paginacion {
+    padding-top: 30px;
+}
+
+.contenedor-info {
+    background-color: #c1bebe;
+}
+
+.tamaño-ventana {
+    width: 800px !important;
+}
+
+.infomacion {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.color-card-he {
+    background-color: black;
+}
+
+.div-conten {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.personajes-lista {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+/* Filtros */
+/* =============================================================================== */
+.especialidad-conten {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+}
+
+.especialidad {
+    width: 185px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(173, 216, 230, 0.1);
+    border: 2px solid rgba(100, 149, 237, 0.4);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.especialidad:focus {
+    outline: none;
+    border-color: rgba(70, 130, 180, 0.7);
+    /* Azul más visible */
+    box-shadow: 0 0 8px rgba(100, 149, 237, 0.5);
+    /* Efecto luminoso */
+}
+
+.especialidad:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+    border-color: rgba(70, 130, 180, 0.5);
+}
+
+/* Opciones */
+option {
+    font-size: 18.5px;
+    padding: 8px;
+    background: rgba(173, 216, 230, 0.2);
+    /* Fondo azul claro */
+    color: #333;
+    /* Color de texto */
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+}
+
+.filtos-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+label {
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    padding: 16px 0;
+}
+
+.contenedor-filtros {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 670px) {
+    .personajes-lista {
+        width: 90%;
+    }
+
+    .contenedor-filtros {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .personajes-lista {
+        width: 95%;
+    }
+
+    .principal-card {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .imagen-primaria {
+        width: 250px;
+        height: 188px;
+    }
+
+    .h2-primario {
+        font-size: 28px;
+    }
+
+    .logo-hospital {
+        width: 129px;
+        height: 89px;
+        margin: 10px 0px
+    }
+
+    .p {
+        font-size: 15px;
+    }
+
+    .header-card {
+        height: 105px;
+    }
+
+    /* modal */
+    .titulo-modal {
+        font-size: 20px;
+    }
+
+    .textos {
+        margin-top: 20px;
+    }
+
+    .imagen-modal {
+        width: 190px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 40px;
+        margin-right: 0px;
+    }
+
+    .tamaño-modal {
+        width: 300px !important;
+    }
+
+    .modal-info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+
+    /* nav */
+    .contenido {
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    /* botones de siguiente y antes  */
+    .btn-pag {
+        font-size: 13px !important;
+        font-weight: 300;
+        padding: 8px;
+        width: 100px;
+    }
+
+    .botones-pagi {
+        width: 85%;
+        padding-top: 20px;
+    }
+
+    /* Paginacion */
+
+    .contenedor-paginacion {
+        width: 300px;
+        align-items: center;
+        place-content: center;
+        place-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .numeros-pagina {
+        width: 300px;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /* filtros */
+    .filtros {
+        place-items: center;
+    }
+
+    /* Especialidad */
+    .especialidad {
+        width: 170px;
+        padding: 12px 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    option {
+        font-size: 16px;
+    }
+
+    .titulo-label {
+        font-size: 17px;
+    }
+}
