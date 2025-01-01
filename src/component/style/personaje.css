@@ -344,6 +344,7 @@ label {
     .contenedor-filtros {
         flex-direction: column;
     }
+    
 }
 
 @media (max-width: 500px) {
@@ -399,6 +400,14 @@ label {
 
     .tamaño-modal {
         width: 300px !important;
+    }
+    .modal-dialog{
+        display: flex !important;
+        justify-content: center !important;
+        place-content: center !important;
+        place-items: center !important;
+        place-self: center !important;
+        place-items: center !important;
     }
 
     .modal-info {
