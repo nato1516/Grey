@@ -223,7 +223,11 @@ nav {
     /* Reduce el desenfoque para un efecto más nítido */
     -webkit-backdrop-filter: blur(50px);
 }
-
+.active {
+    background-color: #c387e7;   /* Fondo verde cuando está seleccionado */
+    color: white;                 /* Color blanco para el texto */
+    border: 1px solid #4d2e57;   /* Borde más oscuro para el botón activo */
+}
 .contenedor-paginacion {
     padding-top: 30px;
 }
