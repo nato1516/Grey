@@ -355,7 +355,7 @@ label {
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
     .personajes-lista {
         width: 95%;
     }
