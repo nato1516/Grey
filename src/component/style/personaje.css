@@ -213,6 +213,7 @@ nav {
     background-color: #605eb9dc;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
+    color: white;  
 }
 .active {
     background-color: #c387e7;  
