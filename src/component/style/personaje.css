@@ -214,6 +214,9 @@ nav {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     color: white;  
+    font-family: "Agdasima", sans-serif;
+    font-size: 18px;
+    
 }
 .active {
     background-color: #c387e7;  
