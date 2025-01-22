@@ -51,14 +51,8 @@ nav {
     height: 100% !important;
 }
 .logo-nav{
-    width: auto;
+    width: 250px;
     height:auto;
-}
-p{
-    font-family: "Agdasima", sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
 }
 /* ========================================================================== */
 /* Card */
@@ -386,12 +380,6 @@ label {
 }
 
 @media (max-width: 670px) {
-    .p-titulo{
-    font-family: "Agdasima", sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
-    }
     .personajes-lista {
         width: 90%;
     }
@@ -427,13 +415,15 @@ label {
     .titulo h2{
         font-size: 30px;
     }
+    .p-titulo{
+        font-family: "Agdasima", sans-serif;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 300;
+    }
 }
 
 @media (max-width: 580px) {
-    .logo-nav{
-    width: 190px;
-    height:50px;
-    
     .personajes-lista {
         width: 95%;
     }
@@ -460,12 +450,6 @@ label {
         width: 129px;
         height: 89px;
         margin: 10px 0px
-    }
-    .p-titulo{
-    font-family: "Agdasima", sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
     }
     .p-modal {
         font-size: 15px;
@@ -557,3 +541,4 @@ label {
         font-size: 17px;
     }
 }
+
