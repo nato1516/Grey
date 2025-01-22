@@ -105,15 +105,15 @@ export default function Paginass() {
         ));
     };
     return (
-       <div className='contenedor-info'>
+      <div className='contenedor-info'>
             <Nav onSearch={manejarBusqueda} />
             
             <div className='titulo'>
                 <h2>Personajes de Grey's Anatomy y Estación 19</h2>
-                <p>
+                <p className='p-titulo'>
                 Esta Greydex es una recopilación de personajes de Grey's Anatomy y Estación 19.
                 </p>
-                <p>Reúne a los personajes de Grey's Anatomy (21 temporadas) y Estación 19 (7 temporadas), dos series conectadas en el mismo universo.  </p>
+                <p className='p-titulo'>Reúne a los personajes de Grey's Anatomy (21 temporadas) y Estación 19 (7 temporadas), dos series conectadas en el mismo universo.  </p>
             </div>
             <div className="contenedor-filtros">
                 <Filtros onFilterChange={manejarCambioFiltroEspecialidad} />
