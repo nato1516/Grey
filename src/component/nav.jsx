@@ -8,9 +8,9 @@ export default function Nav({ onSearch }) {
   return (
     <div>
       <nav>
-        <div className="contenido">
+       <div className="contenido">
           <div className="logo-nav">
-            <img src={logo} alt="" />
+            <img className='logo-img' src={logo} alt="" />
           </div>
           <div className="busqueda">
             <input className='input-busca'
