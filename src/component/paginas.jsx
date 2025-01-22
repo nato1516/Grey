@@ -113,18 +113,11 @@ export default function Paginass() {
 
 
     return (
-        <div className='contenedor-info'>
+       <div className='contenedor-info'>
             <Nav onSearch={manejarBusqueda} />
-            <Botones
-                currentPage={currentPage}
-                totalPages={totalPages}
-                pagAnte={pagAnte}
-                pagDesp={pagDesp}
-            />
-            <div className="contenedor-paginacion">
-                <div className="numeros-pagina">{renderizarNumerosDePaginas()}</div>
+            <div className="tiulo-poke">
+                
             </div>
-
             <div className="contenedor-filtros">
                 <Filtros onFilterChange={manejarCambioFiltroEspecialidad} />
                 <FiltroTempIni cambioFiltroCambio={manejarCambioFiltroTemporada} />
@@ -134,6 +127,15 @@ export default function Paginass() {
                 {currentCharacters.map((personaje) => (
                     <Personajes key={personaje.id} personaje={personaje} />
                 ))}
+            </div>
+            <Botones
+                currentPage={currentPage}
+                totalPages={totalPages}
+                pagAnte={pagAnte}
+                pagDesp={pagDesp}
+            />
+            <div className="contenedor-paginacion">
+                <div className="numeros-pagina">{mostrarBotonesDePaginas()}</div>
             </div>
         </div>
     );
