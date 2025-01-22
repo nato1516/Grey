@@ -40,7 +40,7 @@ nav {
     font-family: "Bebas Neue", sans-serif;
     font-size: 40px;
 }
-.titulo p{
+.p-titulo{
     font-family: "Agdasima", sans-serif;
     font-size: 20px;
     color: #fff;
@@ -380,7 +380,7 @@ label {
 }
 
 @media (max-width: 670px) {
-    .titulo p{
+    .p-titulo{
     font-family: "Agdasima", sans-serif;
     font-size: 20px;
     color: #fff;
@@ -455,7 +455,7 @@ label {
         height: 89px;
         margin: 10px 0px
     }
-        .titulo p{
+    .p-titulo{
     font-family: "Agdasima", sans-serif;
     font-size: 20px;
     color: #fff;
