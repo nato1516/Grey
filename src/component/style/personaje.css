@@ -144,14 +144,11 @@ nav {
 .input-busca {
     flex: 1;
     border: 1px solid rgba(71, 136, 249, 0.866);
-    /* Añadí un borde gris claro */
     outline: none;
     padding: 10px;
     border-radius: 10px 0 0 10px;
-    /* Ajusté el borde para mantener consistencia */
     font-size: 16px;
     background-color: #f9f9f9;
-    /* Un fondo ligeramente gris para diferenciar del fondo blanco */
 }
 
 .input-busca:focus {
@@ -161,7 +158,6 @@ nav {
 
 .lupa {
     background-color:  #7775ffdc;
-    /* Color de fondo del botón */
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -182,9 +178,7 @@ nav {
 .btn-pag {
     font-size: 20px !important;
     background-color:  #605eb9dc;
-    /* Fondo semitransparente en azul */
     border: 2px solid rgba(100, 149, 237, 0.4);
-    /* Borde azul semitransparente */
     border-radius: 8px;
     font-family: "Agdasima", sans-serif;
     font-weight: 400;
@@ -194,7 +188,6 @@ nav {
 
 .btn-pag:hover {
     background-color: rgba(100, 149, 237, 0.4);
-    /* Fondo azul más visible al pasar el mouse */
 }
 
 .botones-pagi {
@@ -216,25 +209,25 @@ nav {
     margin: 5px 5px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 5px;
-    /* Aumenta la visibilidad del borde */
     background-color: #605eb9dc;
-    /* Aumenta las dimensiones y opacidades */
     backdrop-filter: blur(50px);
-    /* Reduce el desenfoque para un efecto más nítido */
     -webkit-backdrop-filter: blur(50px);
+    color: white;
+    width: 40px;
 }
 .active {
-    background-color: #c387e7;   /* Fondo verde cuando está seleccionado */
-    color: white;                 /* Color blanco para el texto */
-    border: 1px solid #4d2e57;   /* Borde más oscuro para el botón activo */
+    background-color: #c387e7;  
+    color: white;                
+    border: 1px solid #4d2e57;   
 }
 
 .contenedor-paginacion {
-    padding-top: 30px;
+    padding: 30px 0 35px;
 }
 
 .contenedor-info {
     background-color: #c1bebe;
+    min-height: 100vh;
 }
 
 .tamaño-ventana {
@@ -299,9 +292,7 @@ nav {
 .especialidad:focus {
     outline: none;
     border-color: rgba(70, 130, 180, 0.7);
-    /* Azul más visible */
     box-shadow: 0 0 8px rgba(100, 149, 237, 0.5);
-    /* Efecto luminoso */
 }
 
 .especialidad:hover {
@@ -314,9 +305,7 @@ option {
     font-size: 18.5px;
     padding: 8px;
     background: rgba(173, 216, 230, 0.2);
-    /* Fondo azul claro */
     color: #333;
-    /* Color de texto */
     font-family: "Agdasima", sans-serif;
     font-weight: 400;
 }
@@ -495,3 +484,4 @@ label {
         font-size: 17px;
     }
 }
+
