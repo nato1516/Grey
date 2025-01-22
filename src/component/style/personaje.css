@@ -42,7 +42,7 @@ nav {
 }
 .titulo p{
     font-family: "Agdasima", sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     color: #fff;
     font-weight: 300;
 }
@@ -380,6 +380,12 @@ label {
 }
 
 @media (max-width: 670px) {
+    .titulo p{
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    }
     .personajes-lista {
         width: 90%;
     }
@@ -448,6 +454,12 @@ label {
         width: 129px;
         height: 89px;
         margin: 10px 0px
+    }
+        .titulo p{
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
     }
     .p {
         font-size: 15px;
