@@ -421,6 +421,10 @@ label {
 }
 
 @media (max-width: 580px) {
+    .logo-nav{
+    width: 200px;
+    height:60px;
+    
     .personajes-lista {
         width: 95%;
     }
