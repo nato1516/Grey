@@ -42,7 +42,7 @@ nav {
 }
 .titulo p{
     font-family: "Agdasima", sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     color: #fff;
     font-weight: 300;
 }
@@ -414,9 +414,6 @@ label {
     }
     .titulo h2{
         font-size: 30px;
-    }
-    .titulo p{
-        font-size: 18px;
     }
 }
 
