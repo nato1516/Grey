@@ -4,7 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.App{
+    background-color: #918e8e;
+}
 /* nav */
 /* ========================================================================== */
 .contenido img {
@@ -24,6 +26,34 @@ nav {
     padding: 20px 0px;
 }
 
+.titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.titulo h2{
+    color:  #393874dc;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+}
+.titulo p{
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.logo-img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.logo-nav{
+    width: 250px;
+    height:auto;
+}
 /* ========================================================================== */
 /* Card */
 /* =========================================================================== */
@@ -144,11 +174,14 @@ nav {
 .input-busca {
     flex: 1;
     border: 1px solid rgba(71, 136, 249, 0.866);
+    /* Añadí un borde gris claro */
     outline: none;
     padding: 10px;
     border-radius: 10px 0 0 10px;
+    /* Ajusté el borde para mantener consistencia */
     font-size: 16px;
     background-color: #f9f9f9;
+    /* Un fondo ligeramente gris para diferenciar del fondo blanco */
 }
 
 .input-busca:focus {
@@ -158,6 +191,7 @@ nav {
 
 .lupa {
     background-color:  #7775ffdc;
+    /* Color de fondo del botón */
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -178,7 +212,9 @@ nav {
 .btn-pag {
     font-size: 20px !important;
     background-color:  #605eb9dc;
+    /* Fondo semitransparente en azul */
     border: 2px solid rgba(100, 149, 237, 0.4);
+    /* Borde azul semitransparente */
     border-radius: 8px;
     font-family: "Agdasima", sans-serif;
     font-weight: 400;
@@ -188,6 +224,7 @@ nav {
 
 .btn-pag:hover {
     background-color: rgba(100, 149, 237, 0.4);
+    /* Fondo azul más visible al pasar el mouse */
 }
 
 .botones-pagi {
@@ -202,6 +239,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 30px 0px;
 }
 
 .btn-hoja {
@@ -213,21 +251,19 @@ nav {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     color: white;
-    width: 40px;
 }
 .active {
-    background-color: #c387e7;  
-    color: white;                
-    border: 1px solid #4d2e57;   
+    background-color: #c387e7;   /* Fondo verde cuando está seleccionado */
+    color: white;                 /* Color blanco para el texto */
+    border: 1px solid #4d2e57;   /* Borde más oscuro para el botón activo */
 }
 
 .contenedor-paginacion {
-    padding: 30px 0 35px;
+    padding-top: 30px;
 }
 
 .contenedor-info {
-    background-color: #c1bebe;
-    min-height: 100vh;
+    background-color: #918e8e;
 }
 
 .tamaño-ventana {
@@ -292,7 +328,9 @@ nav {
 .especialidad:focus {
     outline: none;
     border-color: rgba(70, 130, 180, 0.7);
+    /* Azul más visible */
     box-shadow: 0 0 8px rgba(100, 149, 237, 0.5);
+    /* Efecto luminoso */
 }
 
 .especialidad:hover {
@@ -305,7 +343,9 @@ option {
     font-size: 18.5px;
     padding: 8px;
     background: rgba(173, 216, 230, 0.2);
+    /* Fondo azul claro */
     color: #333;
+    /* Color de texto */
     font-family: "Agdasima", sans-serif;
     font-weight: 400;
 }
@@ -363,6 +403,20 @@ label {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    .logo-nav{
+        padding-bottom: 20px;
+    }
+    .titulo{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titulo h2{
+        font-size: 30px;
+    }
+    .titulo p{
+        font-size: 14px;
     }
 }
 
@@ -484,4 +538,3 @@ label {
         font-size: 17px;
     }
 }
-
